@@ -1,0 +1,44 @@
+<html>
+   <head>
+        <title> My Application</title>
+   </head>
+   <body>
+        <h1>Application form</h1>
+        <form>
+           <label for = "N">First name</label>
+           <input type = "text" id= "N" placeholder = "Enter first name" required><br>
+           <div><label for = "M">Last name</label>
+           <input type = "text" id = "M" placeholder ="Enter last name" required></div>
+           <label >Gender</label>
+           <input type = "radio" name = "Gender" value = "Male">Male
+           <input type = "radio" name = "Gender" value = "Female">Female<br> 
+           <label>DOB</label>
+           <input type = "date" placeholder = "Enter dob"><br>
+           <label>Department</label>
+           <select multiple > name = "department">
+                  <option value = "CSE"selected>CSE
+                  <option  value = "IT">IT
+                  <option value = "CIVIL">CIVIL
+                  <option value = "MECH">MECH
+                  <option value = "EEE">EEE
+                  <option value = "ECE">ECE
+           </select><br>
+           <label for = "A">email</label>
+           <input type = "email" id = "A"placeholder = "Enter email" required><br>
+           <label for = "X">Password</label>
+           <input type = "password" id ="X"placeholder = "Enter password" required><br> 
+           <label for = "B">Phone number</label>
+           <input type = "number" id = "B"placeholder = "Enter phone no"><br>
+           <label>Languages</label>
+           <input type = "checkbox" name = "languages" value = "C">C
+           <input type = "checkbox" name = "languages" value = "Python">python
+           <input type = "checkbox" name = "languages" value = "Java">Java<br>
+           <label>Choose your fav color</label>
+           <input type = "color"><br><br>
+           <label>comments</label>
+           <textarea row = "2" cols = "20"></textarea><br>
+           <input type = "Submit" value ="Submit">
+           <input type = "Reset"  value = "Reset">
+        </form>  
+   </body>
+</html>
