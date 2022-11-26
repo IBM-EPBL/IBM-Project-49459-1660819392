@@ -1,0 +1,19 @@
+kind : Deployment
+metadata :
+	name : joba
+spec :
+	replicas : 1
+	selector :
+		matchLabels :
+			app : joba
+	template :
+		metadata :
+			labels : 
+				app : joba
+		spec : 
+			containers :
+			- name : joba
+			  image : vasudeha/cadjob
+			  imagePullPolicy : Always
+			  Ports :
+			  - containerPort : 5000

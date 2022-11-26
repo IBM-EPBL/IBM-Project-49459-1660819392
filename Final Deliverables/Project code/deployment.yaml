@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: joba
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: joba
+    template:
+        metadata:
+            labels:
+                app: joba
+        spec:
+            containers:
+            - name: joba
+              image: femi/cadjob
+              imagePullPolicy: Always
+              ports :
+              - containerPort: 5000
